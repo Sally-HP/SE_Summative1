@@ -11,4 +11,4 @@ assignees: Sally-HP
 - Describe the feature that needs developing
 
 ### Tasks ✅
-- [] What needs to be achieved as part of this feature
+- [ ] What needs to be achieved as part of this feature
