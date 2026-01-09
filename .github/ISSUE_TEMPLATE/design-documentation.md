@@ -11,4 +11,4 @@ Description 📝:
 Describe what is required 
 
 Tasks ✅:
-[] What needs to be achieved as part of this task
+- [ ] What needs to be achieved as part of this task
