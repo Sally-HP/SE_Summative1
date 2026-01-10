@@ -17,7 +17,7 @@ As a public sector organisation, we must constantly consider our use of public f
 - Automated calculation of anticipated meeting cost
 - Results displaying total cost 
 - A lightweight web-based application suitable for small scale internal use
-- Clear project documentation
+- Clear project documentation 
 
 ### Out of scope
 - Storing of information
@@ -29,15 +29,15 @@ As a public sector organisation, we must constantly consider our use of public f
 ### Functional Requirements
 
 ### 1. User interface
-- *Input fields for employee grades and meeting time*: Users must be able to input number of employees for each of the grades from G6-EA and the length of time the meeting will be. 
-- *Calculate button*: Button required to trigger the calculation based on user input data. 
-- *Results*: The output must display the total anticipated meeting cost, based on the information provided. 
+- **Input fields**: Users must be able to input number of employees for each of the grades from G6-EA and the meeting duration. 
+- **Calculate button**: Button required to trigger the calculation based on user input data. 
+- **Results**: The output must display the total anticipated meeting cost, based on the information provided. 
 
 ### 2. Data sources
-- *Salary data*: Embed standardised grade salary rates for 2025/26. These should use band minimums rather than averages due to limited pay progression through the range.
+- **Salary data**: Embed standardised grade salary rates for 2025/26. These should use band minimums rather than averages due to limited pay progression through the range.
 
 ### Calculation Logic 
-- *Calculation formula*: Implement formula to calculate the meeting cost based on information provided.
+- **Calculation formula**: Implement formula to calculate the meeting cost based on information provided:
     `Meeting cost per grade = No. of employees at specific grade * (hourly pay of grade * meeting length)`
 
 ### Non-Functional Requirements
