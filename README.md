@@ -38,7 +38,7 @@ As a public sector organisation, we must constantly consider our use of public f
 
 ### Calculation Logic 
 - **Calculation formula**: Implement formula to calculate the meeting cost based on information provided:
-    `Meeting cost per grade = No. of employees at specific grade * (hourly pay of grade * meeting length)`
+`Meeting cost per grade = No. of employees at specific grade * (hourly pay of grade * meeting length)`
 
 ### Non-Functional Requirements
 
@@ -48,3 +48,43 @@ As a public sector organisation, we must constantly consider our use of public f
 
 ### 2. Performance
 - Results load within 1 second.
+
+## User Stories
+User stories help to ensure that end users are at the centre of software development, by focusing on what their needs are from the end product. I developed user stories based on the key users of the product and what their requirements in this space are from speaking to colleagues. 
+
+### User story 1: Capturing number of attendees
+
+As a project manager 
+I want to enter the number of attendees
+So that I can estimate the total meeting cost
+
+### User story 2: Capturing grade pay
+
+As a project manager
+I want to input job grades per attendee
+So that I can estimate the cost based on standard pay bands
+
+### User story 3: Defining meeting duration
+
+As a project manager
+I want to enter the meeting duration in hours
+So that I can calculate the cost of different meeting lengths
+
+### User story 4: Capturing blank information
+
+As a project manager
+I want the ability to leave some grades blank
+So that I can avoid adding 0 values where not required
+
+### User story 5: Meeting cost output
+
+As a project manager
+I want to see the total cost clearly displayed as an output
+So that I can make informed decisions on whether a meeting is needed and feed this back to my stakeholders
+
+# Prototype Design
+
+## Wireframing
+
+Once I had captured the project requirements and user stories, the next step was to initiate the first stage of user interface design through wireframing in Figma. I designed two prototype mockups for a desktop application, as mobile application design was out of the project scope. The purpose of wireframing multiple designs in Figma was to map out different design ideas to gather feedback from project stakeholders before code development. 
+
