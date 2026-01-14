@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Meeting Cost App</title>
 </head>
-
 <body>
-    <h1>Meeting Cost Calculator</h1>
-    <form></form>
 
+<h1>Meeting Cost Calculator</h1>
+
+<div id="input-container">
+
+    <div id="top-row">
+        <input
+            type="number"
+            class="duration"
+            placeholder="Enter meeting duration"
+            >
+    </div>
+    
+    <div id="second-row">
+        <input 
+            type="number"
+            class="attendeecount"
+            min="1"
+            placeholder="Number of attendees"
+        >
+
+        <select class="gradeselect">
+            <option value="G6">G6</option>
+            <option value="G7">G7</option>
+            <option value="SEO">SEO</option>
+            <option value="HEO">HEO</option>
+            <option value="EO">EO</option>
+            <option value="EA">EA</option>
+        </select>
+    </div>
+
+    <button class="btn" onclick="addattendee()">Add additional attendees</button>
+
+    </div>
+
+    <div>
+
+    <button class="btn" onclick="calculate()">Calculate cost</button>
+
+</div>
+
+<div id="result_container">
+    <h2>Results</h2>
+    <p id="result"></p>
+</div>
+
+    <script src="script.js"></script>
 
 </body> 
+</html>
