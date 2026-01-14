@@ -12,13 +12,37 @@
 </head>
 <body>
 
-<div class="input_container">
-    <h1>Meeting Cost Calculator</h1>
+<h1>Meeting Cost Calculator</h1>
 
-    <div id="inputs"></div>
+<div class="input-container">
 
-    <div class="graderow">
-        <button class="btn" onclick="addGrade()">Add additional grades</button>
+    <div id="top-row">
+        <input
+            type="number"
+            class="duration"
+            placeholder="Enter meeting duration"
+            >
+        </div>
+    
+        <div id="second-row">
+            <input 
+            type="number"
+            class="attendeecount"
+            min="1"
+            placeholder="Number of attendees"
+            >
+
+            <select class="gradeselect">
+                <option value="G6">G6</option>
+                <option value="G7">G7</option>
+                <option value="SEO">SEO</option>
+                <option value="HEO">HEO</option>
+                <option value="EO">EO</option>
+                <option value="EA">EA</option>
+            </select>
+
+            <button class="btn" onclick="addattendee()">Add additional attendees</button>
+        </div>
 
     </div>
 
@@ -32,10 +56,6 @@
     <h2>Results</h2>
     <p id="result"></p>
 </div>
-    
-</div>
-
-<script src="script.js"></script>
 
 </body> 
 </html>
