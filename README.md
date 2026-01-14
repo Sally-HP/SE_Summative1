@@ -88,3 +88,21 @@ So that I can make informed decisions on whether a meeting is needed and feed th
 
 Once I had captured the project requirements and user stories, the next step was to initiate the first stage of user interface design through wireframing in Figma. I designed two prototype mockups for a desktop application, as mobile application design was out of the project scope. The purpose of wireframing multiple designs in Figma was to map out different design ideas to gather feedback from project stakeholders before code development. 
 
+The main differences between these designs were focused on how attendees of different grades would be captured. The first design would have one input box per grade as a static design, for users to fill in the number of each of these attending. The second design allowed users to add additional grades in as needed through the use of a button, and choose the grade specifically from a drop down list. When I tested these designs with stakeholders, the majority felt that the Design Option B was their preferred choice in terms of visuals and anticipated ease of use. This was in part due to it being easier to refer back to the specific data input in Option B once the calculation had been done, so a user could show the size of meeting the value related to. Based on this, I decided to proceed with designing the app in the style of Design Option B. 
+
+### Wireframe 1 - Design Option A: Input phase
+
+![WF1](https://github.com/Sally-HP/SE_Summative1/blob/main/images/Wireframe%20-%201.png)
+
+### Wireframe 2 - Design Option A: Output phase
+
+![WF2](https://github.com/Sally-HP/SE_Summative1/blob/main/images/Wireframe%20-%202.png)
+
+### Wireframe 3 - Design Option B: Input Phase
+
+![WF3](https://github.com/Sally-HP/SE_Summative1/blob/main/images/Wireframe%20-%203.png)
+
+### Wireframe 4 - Design Option B: Output Phase
+
+![WF4](https://github.com/Sally-HP/SE_Summative1/blob/main/images/Wireframe%20-%204.png)
+
