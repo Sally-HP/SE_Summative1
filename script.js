@@ -1,11 +1,11 @@
 // this function adds a new grade group
-function addGrade() {
-    const container = document.getElementById("inputs");
+function addattendee() {
+    const container = document.getElementById("input-container");
 
-    const row = document.createElement("div");
-    row.className = "graderow";
+    const secondrow = document.createElement("div");
+    secondrow.className = "second-row";
 
-    row.innerHTML = `
+    secondrow.innerHTML = `
         <input 
             type="number"
             class="attendeecount"
@@ -23,7 +23,7 @@ function addGrade() {
         </select>
     `;
 
-    container.appendChild(row);
+    container.appendChild(secondrow);
 }
 
 // define salary for each grade
@@ -38,6 +38,7 @@ const gradesalary = {
 
 // this function calculates cost with info provided
 function calculate() {
+    const duration = parseFloat(document.querySelector(".duration").value);
     const attendeeinputs = document.querySelectorAll(".attendeecount");
     const gradeselect = document.querySelectorAll(".gradeselect");
 
