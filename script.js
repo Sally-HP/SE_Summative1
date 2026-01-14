@@ -1,6 +1,6 @@
 // this function adds a new grade group
 function addattendee() {
-    const container = document.getElementById("input-container");
+    const container = document.getElementById("sec-row");
 
     const secondrow = document.createElement("div");
     secondrow.className = "second-row";
@@ -8,12 +8,13 @@ function addattendee() {
     secondrow.innerHTML = `
         <input 
             type="number"
-            class="attendeecount"
+            id="attendeecount"
             min="1"
             placeholder="Number of attendees"
         >
 
         <select class="gradeselect">
+            <option value="" disabled selected>Select Grade</option>
             <option value="G6">G6</option>
             <option value="G7">G7</option>
             <option value="SEO">SEO</option>
@@ -58,4 +59,4 @@ function calculate() {
 }
 
 // inital page to load with one grade input field
-addGrade();
+addattendee();
