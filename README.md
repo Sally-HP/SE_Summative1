@@ -2,6 +2,8 @@
 
 Code and documentation for the Software Engineering Summative 1 Assignment: Meeting cost calculator application. 
 
+**Production Env App:** https://sally-hp.github.io/SE_Summative1/
+
 ## Project Introduction
 
 The purpose of this project is to develop a simple meeting cost calculator, which can be adopted within my workplace to consider whether the cost of a meeting is an effective use of public money. The tool will allow a user to calculate the personnel cost of a meeting, using salary band information across various grades within the department. The project aims to provide a simple user interface which allows quick calculation of this cost.
@@ -114,5 +116,62 @@ The GOV.UK design system has [pre-specified colour pallette](https://design-syst
 
 ![colourpalette](https://github.com/Sally-HP/SE_Summative1/blob/main/images/gov_colour_pallette.png)
 
-I applied these colours to the root of my CSS code to ensure they could be easily aligned to the relevant elements in the design and formatting within CSS.
+Further along in my project, I applied these colours to the root of my CSS code to ensure they could be easily aligned to the relevant elements in the design and formatting within CSS.
 
+# Building the MVP
+
+## HTML development
+
+I first developed a basic app in html to capture the general structure of my product, and map the fields out from design into code. Once this had been completed, I had a basic skeleton structure of the fields needed, without any functionality  or style/design development.
+
+![basicapp](https://github.com/Sally-HP/SE_Summative1/blob/main/images/basic-app.png)
+
+## Javascript development
+
+Once the basic HTML structure had been developed, I focused on building the functionality within Javascript. The steps required here were adding additional attendee rows, specifying salary data and calculating the total through the calculation button. I called the addattendee function at the end of this script to ensure the inital app load would include one row of fields for the attendee and grade selection. Once the JS had been developed, I added the script into the HTML to link these files and make this functional. 
+
+### Adding in additional attendees 
+As gathered through feedback from users, I understood that I needed to add a function into the app which allowed users to add additional attendee rows with the option to choose the grade from a drop down list. I developed code in javascript to cause this to happen when using a specific button in the application, and ensured these fields were contained within the second row of my app fields for design purposes later on in the development. 
+
+### Salary data
+As there was no api avaliable capturing standard salary information I was required to hardcode this into the apps backend, ensuring the grades were aligned to those specified within the drop down field for adding attendees. As salaries only change on an annual basis, this had little impact on the maintainability of my application, however this is to be reviewed for future years if the app's uptake is significant. 
+
+### Calculating total cost
+In order to calculate the total meeting cost based on the information provided, the calculation needed embedding within the code also. This required capturing the duration, attendee and grades information inputted by the user and calculating the total meeting cost. 
+
+The steps required were:
+- Capture duration from duration field as a float value, as meetings can input in 0.5 increments
+- Capture all attendees from attendee field
+- Capture all grades from grade selection field
+- Loop through each second row containing one attendee number field and one grade field per row
+- Read the number of attendees for each grade
+- Look up salary for each grade and convert this to hourly pay
+    *salary/(number of weeks x contracted hours per week)*
+- Calculate total
+    *meeting duration x (attendees x hourly pay)*
+- Display result as £ to 2 decimal places. 
+
+## CSS development
+
+Once I was happy with the basic fields and had checked the button and drop down functions were working as anticipated, I moved onto the design and formatting of the app in CSS. I utilised classes and id's throughout the HTML and Javascript code to allow for easier formatting in CSS once this stage was reached. 
+
+# Technical documentation
+
+Project Management
+- [GitHub Projects](https://github.com/users/Sally-HP/projects/2/views/1)
+
+Prototype design
+- Figma
+
+Production envrionment app
+- [Meeting Cost App MVP](https://sally-hp.github.io/SE_Summative1/)
+
+Tech Stack
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript#:~:text=JavaScript%20(JS)%20is%20a%20lightweight,Apache%20CouchDB%20and%20Adobe%20Acrobat.)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+Files required to run the application
+- index.html
+- script.js
+- style.css
