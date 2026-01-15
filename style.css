@@ -37,7 +37,7 @@ body {
 
 .input-container {
     width: 500px; 
-    height: 400px;
+    height: 500px;
     background-color: var(--white);
     color: var(--dark-grey);
     display: flex;
@@ -45,6 +45,17 @@ body {
     align-items: center;
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.addbtn {
+    width: 20px;
+    height: 20px;
+    background-image: url("images/add_btn.svg");
+    background-size: cover;
+    border: none;
+    background-color: transparent;
 }
 
 .btn {
@@ -57,7 +68,8 @@ body {
     padding: 0.5rem 3rem;
     border-radius: 0.4rem;
     border: none;
-
+    position: absolute;
+    bottom: 30px;
 }
 
 .duration {

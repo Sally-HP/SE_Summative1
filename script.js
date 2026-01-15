@@ -8,7 +8,7 @@ function addattendee() {
     secondrow.innerHTML = `
         <input 
             type="number"
-            id="attendeecount"
+            class="attendeecount"
             min="1"
             placeholder="Number of attendees"
         >
@@ -22,6 +22,8 @@ function addattendee() {
             <option value="EO">EO</option>
             <option value="EA">EA</option>
         </select>
+
+        <button class="addbtn" onclick="addattendee()"></button>
     `;
 
     container.appendChild(secondrow);
@@ -49,13 +51,12 @@ function calculate() {
         const attendees = parseInt(attendeeinputs[i].value) || 0;
         const grade = gradeselect[i].value;
 
-        const hourlypay = gradesalary[grade]/(52*37.5)
+        const hourlypay = gradesalary[grade]/(52*37.5);
 
-        total += duration(attendees * hourlypay);
+        total += duration * attendees * hourlypay;
     }
 
-    document.getElementById("result").textContent = `Estimated meeting cost = £${total.toFixed(2)}`;
-
+    document.getElementById("result").textContent = `Estimated meeting cost = £${total.toFixed(2)}`
 }
 
 // inital page to load with one grade input field
