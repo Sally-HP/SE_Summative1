@@ -5,10 +5,12 @@
 }
 
 :root {
-    --blue: rgba(45, 89, 126);
-    --dark-grey: rgba(75, 75, 75, 0.9);
-    --light-grey: rgba(214, 213, 213, 0.9);
-    --white:  rgb(255, 255, 255);
+    --darkblue: #003078;
+    --blue: #1d70b8;
+    --lightblue: #5694ca;
+    --dark-grey: #505a5f;
+    --light-grey: #f3f2f1;
+    --white:  #ffffff;
 }
 
 h1,
