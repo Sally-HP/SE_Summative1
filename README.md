@@ -112,6 +112,7 @@ As referenced in the non-functional requirements, there are specific accessbilit
 
 The GOV.UK design system has [pre-specified colour pallette](https://design-system.service.gov.uk/styles/colour/#colour-palette) to be used for web design, so I ensured I aligned my chosen colour scheme from my designs in Figma to the specific relevant shades taken from this pallette, as outlined in red below. 
 
-![colour-pallette](https://github.com/Sally-HP/SE_Summative1/blob/main/images/gov_colour_pallette.png)
+![colourpalette](https://github.com/Sally-HP/SE_Summative1/blob/main/images/gov_colour_pallette.png)
 
-I applied these colours to the root of my CSS code to ensure they could be easily aligned to the relevant elements in the design and formatting within CSS. 
+I applied these colours to the root of my CSS code to ensure they could be easily aligned to the relevant elements in the design and formatting within CSS.
+
