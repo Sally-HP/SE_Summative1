@@ -23,7 +23,6 @@ function addattendee() {
             <option value="EA">EA</option>
         </select>
 
-        <button class="addbtn" onclick="addattendee()"></button>
     `;
 
     container.appendChild(secondrow);
