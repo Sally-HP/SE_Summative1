@@ -29,7 +29,7 @@ How to use:
 
 ## App Demo
 
-![AppDemo](https://github.com/Sally-HP/SE_Summative1/tree/main/images/user-guide-video.gif)
+![AppDemo](https://github.com/Sally-HP/SE_Summative1/blob/main/images/user-guide-video.gif)
 
 # Technical documentation
 
@@ -58,6 +58,10 @@ In your terminal run the following to check installed version status:
 - npm -v
 
 If packages not installed, follow instructions to [install Node.js and npm through npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+To run tests on your local machine after following the above steps:
+1. Clone the repository using **git clone https://github.com/Sally-HP/SE_Summative1.git**
+2. Run the following command in terminal **npm run test**
 
 ## Project Scope
 
@@ -89,7 +93,7 @@ If packages not installed, follow instructions to [install Node.js and npm throu
 
 ### Calculation Logic 
 - **Calculation formula**: Implement formula to calculate the meeting cost based on information provided:
-`Meeting cost per grade = No. of employees at specific grade * (hourly pay of grade * meeting length)`
+    `Meeting cost per grade = Meeting duration (hours) * attendees * hourly salary for specific grade
 
 ### Non-Functional Requirements
 
@@ -230,7 +234,6 @@ The steps required were:
 
 Once I was happy with the basic fields and had checked the button and drop down functions were working as anticipated, I moved onto the design and formatting of the app in CSS. I utilised classes and id's throughout the HTML and Javascript code to allow for easier formatting in CSS once this stage was reached. 
 
-
 # Unit Testing
 
 As the calculation function is a core component of the tool, the logic underpinning this was important to test as part of Test Driven Development, to ensure this function was working consistently as developments were made. 
@@ -241,14 +244,24 @@ As this logic is embedded within the JavaScript as part of the user interface, I
 
 Testing this function determines whether the correct salary information is being used within the calculation, which was the biggest risk as this relied on the code matching the grade code with the correct salary. 
 
-![TestPass](https://sally-hp.github.io/images/addattendee-test-pass.png)
+![TestPass](https://github.com/Sally-HP/SE_Summative1/blob/main/images/addattendee-test-pass.png)
 
 Following this test, I expanded the test to involve multiple rows of attendee information to ensure the calculation logic still worked as expected when working with a more complex input. 
 
-![2TestPass](https://sally-hp.github.io/images/addmultipleattendee-test-pass.png)
+![2TestPass](https://github.com/Sally-HP/SE_Summative1/blob/main/images/addmultipleattendee-test-pass.png)
 
 Full testing information can be accessed within the script.test.js file. 
 
 # Evaluation
 
-*To be developed*
+When reflecting on my MVP application against the project scope and requirements outlined in the initial planning stage, I believe this project to be largely a success. I have met most requirements in full, with the expection of further work to be done on accessibility requirements during next steps.
+
+By prototyping two designs I was able to take onboard user feedback and develop the MVP in line with user needs, which is an import step in software design.
+
+Throughout the app development I was able to test the user interface and capture bugs to be rectified within the project issues. Throughout the project I used GitHub not only for version control, but also for issue tracking, project management and push/pull requests. This was my first time working with GitHub in this way and I felt it made this project more successful and easier to manage, than using seperate tools as is my usual experience. 
+
+Overall this application does provide a working model to assist users in calculating meeting costs within their organisations, with a strong user interface and alignment to government design standards. However this now requires an uptake from users in order to understand any potential bugs which have not yet been addressed. User feedback is a key feature in app development to ensure this is meeting needs and a product which will be widely adopted. 
+
+If I were to develop this project further in future, I would focus on two areas:
+- more significant test driven development and error handling to ensure the codebase is robust and the app communicates errors with users as these are weaker areas in the current app development.
+- creating a download button for users to download their results for future reference. 
