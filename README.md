@@ -149,6 +149,32 @@ The GOV.UK design system has [pre-specified colour pallette](https://design-syst
 
 Further along in my project, I applied these colours to the root of my CSS code to ensure they could be easily aligned to the relevant elements in the design and formatting within CSS.
 
+# Project Management
+
+## Kanban workflow
+
+I managed my project within GitHub using GitHub Projects to visually manage my workflow. This allowed me to track my tickets (issues) raised in order to progress the work that needed to be completed in a logical way, reducing the amount of issues worked on at one time. This meant I was able to add features and rectify bugs in a more efficient manner and streamline the delivery of my prototype. 
+
+I decided to approach and organise my project using Kanban, as opposed to a Scrum approach utilising sprints, in order to embed a continuous flow of developments in my project. This felt a suitable approach due to the small size and independent nature of the project. In practice, this meant only working on 1-2 issues at one time, and having a larger backlog to be picked up once current work had been completed and deployed. This helped me to keep on top of what needed to be done, reduce multi-tasking and benefit from the efficiences of fully focusing on one issue from start to end, before picking up the next. This way of working was beneficial for my working style.
+
+I organised my tasks in my kanban board within four sections: 
+- Backlog: Tickets which need to be completed within the project, but are not yet started. Tickets are added to backlog as default. 
+- Ready: Tickets to be ticked up next from backlog.
+- In progress: Tickets which are being actively worked on. 
+- Done: Tickets which have been completed and deployed were relevant. 
+
+[!kanban](https://github.com/Sally-HP/SE_Summative1/blob/main/images/kanban_githubproject.png)
+
+## Ticket templates
+
+One of the first tickets I worked on as part of the project was to complete ticket templates, to ensure consistency when opening tickets within the project. I created three templates based on the tickets I thought would be most common during development. These were **feature**, **design/documentation** and **bug**. 
+
+By developing this consistent styling, I was able to clearly review the types of tickets in the backlog when reviewing my kanban board. 
+
+## Pull requests and branching
+
+Likewise, when deploying commits into my repository and creating pull requests I aligned these with the ticket templates for ease of reviewing these and to keep my project organised for future use. I used seperate branching for each ticket as is common practice. Pull requests occasionally would cover multiple tickets, however it would generally be a single ticket per branch and pull request. 
+
 # Building the MVP
 
 ## HTML development
