@@ -10,7 +10,7 @@ function addattendee() {
             type="number"
             class="attendeecount"
             min="1"
-            placeholder="Number of attendees"
+            placeholder="Enter no. of attendees"
         >
 
         <select class="gradeselect">
@@ -55,8 +55,8 @@ function calculate() {
         total += duration * attendees * hourlypay;
     }
 
-    document.getElementById("result").textContent = `Estimated meeting cost = £${total.toFixed(2)}`
-}
+    document.getElementById("result").textContent = `Your estimated meeting cost is £${total.toFixed(2)}`
+};
 
 // only allow numerical values and decimals in number fields
 document.addEventListener("input", function (e){
