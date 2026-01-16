@@ -163,7 +163,7 @@ I organised my tasks in my kanban board within four sections:
 - In progress: Tickets which are being actively worked on. 
 - Done: Tickets which have been completed and deployed were relevant. 
 
-[!kanban](https://github.com/Sally-HP/SE_Summative1/blob/main/images/kanban_githubproject.png)
+![kanban](https://github.com/Sally-HP/SE_Summative1/blob/main/images/kanban_githubproject.png)
 
 ## Ticket templates
 
