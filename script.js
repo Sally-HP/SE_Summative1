@@ -59,5 +59,15 @@ function calculate() {
     document.getElementById("result").textContent = `Estimated meeting cost = £${total.toFixed(2)}`
 }
 
+// only allow numerical values and decimals in number fields
+document.addEventListener("input", function (e){
+    if (
+        e.target.classList.contains("duration") ||
+        e.target.classList.contains("attendeecount")
+    ) {
+        e.target.value = e.target.value.replace(/[^0-9.]/g, "");
+    }
+});
+
 // inital page to load with one grade input field
 addattendee();
