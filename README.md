@@ -27,8 +27,9 @@ How to use:
 - To insert an additional field for a new grade, click the plus icon on the right hand side of Attendees.  
 - Once you're happy that you have included all information required for your meeting, click the calculate cost button for the results. 
 
-App Demo: 
-![AppDemo](https://github.com/Sally-HP/SE_Summative1/tree/main/images/User-guide-video.mp4)
+## App Demo
+
+![AppDemo](https://github.com/Sally-HP/SE_Summative1/tree/main/images/user-guide-video.gif)
 
 # Technical documentation
 
