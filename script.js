@@ -2,6 +2,9 @@
 function addattendee() {
     const container = document.getElementById("sec-row");
 
+    const maxrows = 6;
+    const currentrows = container.querySelectorAll('.second-row').length;
+
     const secondrow = document.createElement("div");
     secondrow.className = "second-row";
 
@@ -25,7 +28,9 @@ function addattendee() {
 
     `;
 
-    container.appendChild(secondrow);
+    if (currentrows < maxrows) {
+        container.appendChild(secondrow);
+    }
 }
 
 // define salary for each grade
