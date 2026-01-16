@@ -73,4 +73,4 @@ document.addEventListener("input", function (e){
 addattendee();
 
 // exports for unit testing
-module.exports = {addattendee, calculate}
+module.exports = {addattendee, calculate};

@@ -10,6 +10,37 @@ The purpose of this project is to develop a simple meeting cost calculator, whic
 
 As a public sector organisation, we must constantly consider our use of public funds and have a duty to ensure these are used in a way that both avoids waste and ensures value for money. This includes the use of employee time as salaries are funded through public money. This project therefore aims to provide teams with ability to better understand the costs of their meetings in order to prompt behavioural changes and get employees to consider the currently invisible cost of time. A tool to quickly and easily calculate this would enable employees to be more proactive in decision making around whether the purpose and intended outcomes of a meeting justify this cost. 
 
+# User guidance
+
+*To be developed*
+
+# Technical documentation
+
+Project Management
+- [GitHub Projects](https://github.com/users/Sally-HP/projects/2/views/1)
+
+Prototype design
+- Figma
+
+Production envrionment app
+- [Meeting Cost App MVP](https://sally-hp.github.io/SE_Summative1/)
+
+Tech Stack
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript#:~:text=JavaScript%20(JS)%20is%20a%20lightweight,Apache%20CouchDB%20and%20Adobe%20Acrobat.)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+Files required to run the application
+- index.html
+- script.js
+- style.css
+
+Testing
+In terminal run the following to check installed version status
+- node -v
+- npm -v
+If packages not installed, follow instructions to [install Node.js and npm through npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
 ## Project Scope
 
 ### In Scope
@@ -155,30 +186,25 @@ The steps required were:
 
 Once I was happy with the basic fields and had checked the button and drop down functions were working as anticipated, I moved onto the design and formatting of the app in CSS. I utilised classes and id's throughout the HTML and Javascript code to allow for easier formatting in CSS once this stage was reached. 
 
-# Technical documentation
 
-Project Management
-- [GitHub Projects](https://github.com/users/Sally-HP/projects/2/views/1)
+# Unit Testing
 
-Prototype design
-- Figma
+As the calculation function is a core component of the tool, the logic underpinning this was important to test as part of Test Driven Development, to ensure this function was working consistently as developments were made. 
 
-Production envrionment app
-- [Meeting Cost App MVP](https://sally-hp.github.io/SE_Summative1/)
+This logic takes meeting duration, count of attendees at each grade and salary data per grade and converts these into a total estimated cost for meetings. 
 
-Tech Stack
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript#:~:text=JavaScript%20(JS)%20is%20a%20lightweight,Apache%20CouchDB%20and%20Adobe%20Acrobat.)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+As this logic is embedded within the JavaScript as part of the user interface, I created a new file cost-calc-logic.js in order to test this element independently. The reasoning behind this is to test the mathematical calculation element of the function is correct, independent of other actions. 
 
-Files required to run the application
-- index.html
-- script.js
-- style.css
+Testing this function determines whether the correct salary information is being used within the calculation, which was the biggest risk as this relied on the code matching the grade code with the correct salary. 
 
-Testing
-In terminal run the following to check installed version status
-- node -v
-- npm -v
-If packages not installed, follow instructions to [install Node.js and npm through npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+![TestPass](https://sally-hp.github.io/images/addattendee-test-pass.png)
 
+Following this test, I expanded the test to involve multiple rows of attendee information to ensure the calculation logic still worked as expected when working with a more complex input. 
+
+![2TestPass](https://sally-hp.github.io/images/addmultipleattendee-test-pass.png)
+
+Full testing information can be accessed within the script.test.js file. 
+
+# Evaluation
+
+*To be developed*
