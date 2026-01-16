@@ -37,7 +37,7 @@ body {
 
 .input-container {
     width: 500px; 
-    height: 500px;
+    height: 525px;
     background-color: var(--white);
     color: var(--dark-grey);
     display: flex;
@@ -70,6 +70,12 @@ body {
     border: none;
     position: absolute;
     bottom: 30px;
+}
+
+.attendees-head{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
 }
 
 .duration {
