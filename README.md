@@ -12,7 +12,23 @@ As a public sector organisation, we must constantly consider our use of public f
 
 # User guidance
 
-*To be developed*
+Getting started:
+- Open the app in browser https://sally-hp.github.io/SE_Summative1/
+
+Product features:
+- **Cost calculation:** Allows users to calculate the meeting cost based on their own inputted data
+- **Salary information:** Calculates attendee cost using embedded baseline 2025/26 pay data
+- **Grade selection:** Users can easily select a range of attendee grades, to determine the true cost of attendee time. 
+- **Attendee set-up:** Users can add additional attendee rows to suit their needs through the use of the 'plus' button.
+
+How to use: 
+- Insert your expected meeting duration in the 'Enter meeting duration' box. This can be inserted through text, or use the arrows on the box's right hand side. Values should be entered as a decimal of hours. For example, if your meeting is due to last for 2 and a half hours, enter the value 2.5.
+- Insert expected number of attendees in the 'Number of attendees' field and choose the grade of these from the 'Select grade' drop down list. 
+- To insert an additional field for a new grade, click the plus icon on the right hand side of Attendees.  
+- Once you're happy that you have included all information required for your meeting, click the calculate cost button for the results. 
+
+App Demo: 
+![AppDemo](https://github.com/Sally-HP/SE_Summative1/tree/main/images/User-guide-video.mp4)
 
 # Technical documentation
 
@@ -36,9 +52,10 @@ Files required to run the application
 - style.css
 
 Testing
-In terminal run the following to check installed version status
+In your terminal run the following to check installed version status: 
 - node -v
 - npm -v
+
 If packages not installed, follow instructions to [install Node.js and npm through npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Project Scope
