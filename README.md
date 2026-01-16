@@ -175,3 +175,10 @@ Files required to run the application
 - index.html
 - script.js
 - style.css
+
+Testing
+In terminal run the following to check installed version status
+- node -v
+- npm -v
+If packages not installed, follow instructions to [install Node.js and npm through npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+

@@ -71,3 +71,6 @@ document.addEventListener("input", function (e){
 
 // inital page to load with one grade input field
 addattendee();
+
+// exports for unit testing
+module.exports = {addattendee, calculate}
