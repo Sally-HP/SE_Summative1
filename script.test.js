@@ -24,9 +24,48 @@ describe("addattendee", () => {
     });
 });
 
+const gradesalary = {
+    EA: 27244,
+    EO: 31479,
+    HEO: 36000,
+    SEO: 42806,
+    G7: 58185,
+    G6: 70854};
 
+// export calculation logic and test for single attendee row
+const { calculatelogic } = require("./cost-calc-logic.js");
 
+describe("calculate", () => {
 
+    test("should calculate cost for each grade group independently", () => {
+        const result = calculatelogic(
+            2, // meeting duration
+            [3], // attendees
+            ["HEO"], //employee grade
+            gradesalary
+        ); 
 
+        const hourly = 36000 / (52 * 37.5);
+        expect(result).toBeCloseTo(3 * hourly * 2);
+    });
+});
 
-    
+// test for multiple attendee rows
+describe("calculate", () => {
+
+    test("should calculate cost for each grade group independently first then calculate total across all attendees", () => {
+        const result = calculatelogic(
+            2, // meeting duration
+            [3, 5, 6], // attendees
+            ["HEO", "G7", "EO"], //employee grade
+            gradesalary
+        ); 
+
+        const hourlyHEO = 36000 / (52 * 37.5);
+        const hourlyG7 = 58185 / (52 * 37.5);
+        const hourlyEO = 31479 / (52 * 37.5);
+
+        expect(result).toBeCloseTo(2 * (hourlyHEO * 3 + hourlyG7 * 5 + hourlyEO * 6));
+    });
+});
+
